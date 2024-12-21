@@ -66,7 +66,6 @@ const Projects = () => {
       setIsLoading(true);
       const response = await backendApi.get("/api/project");
       setProjects(response.data);
-      print(response.data)
     } catch (error) {
       console.error("Error fetching projects:", error);
     } finally {
